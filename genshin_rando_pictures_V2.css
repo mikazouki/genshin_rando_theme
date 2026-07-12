@@ -1,0 +1,216 @@
+/**
+ * @name Discord+ Genshin Rando Full
+ * @author PlusInsta & Mikazouki
+ * @authorId 309931975102300160
+ * @version 3.4.3
+ * @description Discord+ avec l'integralite des 162 images du dossier assets (2 min par image).
+ * @source https://github.com/mikazouki/genshin_rando_theme
+*/
+@import url('https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css');
+
+.theme-dark {
+  --dplus-backdrop: transparent;
+  
+  --dplus-accent-color-hue: 320;
+  --dplus-accent-color-saturation: 60%;
+  --dplus-accent-color-lightness: 31%;
+
+  --dplus-foreground-color-hue-base: 210;
+  --dplus-foreground-color-hue-links: 197;
+  --dplus-foreground-color-saturation-amount: 1;
+  --dplus-foreground-color-lightness-amount: 1;
+  
+  --dplus-background-color-hue: 320;
+  --dplus-background-color-saturation-amount: 1;
+  --dplus-background-color-lightness-amount: 1;
+  --dplus-background-color-alpha: 0.8;
+}
+
+:root {
+  --dplus-font-ui: 'Poppins';
+  --dplus-font-body: 'Roboto';
+  --dplus-font-header: 'Righteous';
+  --dplus-radius-ui: 10px;
+  --dplus-radius-avatar: 20%;
+  --dplus-radius-server: 20%;
+  --dplus-spacing-ui: 10px;
+  --dplus-spacing-app: 10px;
+  --dplus-icon-avatar-chat: 64px;
+  --dplus-icon-avatar-list: 32px;
+  --dplus-icon-avatar-profile: 80px;
+}
+
+#app-mount::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  animation: bg-slideshow 19440s step-end infinite;
+}
+
+@keyframes bg-slideshow {
+  0.00% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1057657.webp'); }
+  0.62% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1083281.webp'); }
+  1.23% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1107810.webp'); }
+  1.85% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1107815.webp'); }
+  2.47% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1107816.webp'); }
+  3.09% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1108136.webp'); }
+  3.70% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1108905.webp'); }
+  4.32% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1109289.webp'); }
+  4.94% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1110385.webp'); }
+  5.56% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1110664.webp'); }
+  6.17% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1112818.webp'); }
+  6.79% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1113934.webp'); }
+  7.41% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1115199.webp'); }
+  8.02% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1115544.webp'); }
+  8.64% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1116826.webp'); }
+  9.26% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1120262.webp'); }
+  9.88% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1122719.webp'); }
+  10.49% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1123012.webp'); }
+  11.11% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1123013.webp'); }
+  11.73% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1123014.webp'); }
+  12.35% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1123019.webp'); }
+  12.96% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1123242.webp'); }
+  13.58% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1128174.webp'); }
+  14.20% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1129503.webp'); }
+  14.81% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1129597.webp'); }
+  15.43% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1130753.webp'); }
+  16.05% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1131281.webp'); }
+  16.67% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1132526.webp'); }
+  17.28% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1138004.webp'); }
+  17.90% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1139833.webp'); }
+  18.52% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1140214.webp'); }
+  19.14% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1147143.webp'); }
+  19.75% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1160925.webp'); }
+  20.37% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1161808.webp'); }
+  20.99% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1161813.webp'); }
+  21.60% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1386697.webp'); }
+  22.22% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1386710.webp'); }
+  22.84% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1386805.webp'); }
+  23.46% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1386806.webp'); }
+  24.07% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1386997.webp'); }
+  24.69% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1390777.webp'); }
+  25.31% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1392876.webp'); }
+  25.93% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1403349.webp'); }
+  26.54% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1403352.webp'); }
+  27.16% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1409444.webp'); }
+  27.78% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-598673.webp'); }
+  28.40% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1356292.webp'); }
+  29.01% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1356298.webp'); }
+  29.63% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1356902.webp'); }
+  30.25% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1357477.webp'); }
+  30.86% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1357997.webp'); }
+  31.48% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1360708.webp'); }
+  32.10% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1360810.webp'); }
+  32.72% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1360813.webp'); }
+  33.33% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1360820.webp'); }
+  33.95% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1360821.webp'); }
+  34.57% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1360832.webp'); }
+  35.19% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1362745.webp'); }
+  35.80% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1365172.webp'); }
+  36.42% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1368041.webp'); }
+  37.04% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1370661.webp'); }
+  37.65% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1372111.webp'); }
+  38.27% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1372113.webp'); }
+  38.89% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1372115.webp'); }
+  39.51% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1372117.webp'); }
+  40.12% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1372118.webp'); }
+  40.74% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1372227.webp'); }
+  41.36% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1378492.webp'); }
+  41.98% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1348867.webp'); }
+  42.59% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1349150.webp'); }
+  43.21% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1349152.webp'); }
+  43.83% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1349794.webp'); }
+  44.44% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1350319.webp'); }
+  45.06% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1350567.webp'); }
+  45.68% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1351117.webp'); }
+  46.30% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1351139.webp'); }
+  46.91% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1351575.webp'); }
+  47.53% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1353617.webp'); }
+  48.15% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1353618.webp'); }
+  48.77% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1353823.webp'); }
+  49.38% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1353824.webp'); }
+  50.00% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1353859.webp'); }
+  50.62% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1353872.webp'); }
+  51.23% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1354677.webp'); }
+  51.85% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1355324.webp'); }
+  52.47% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1355610.webp'); }
+  53.09% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1355611.webp'); }
+  53.70% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1355854.webp'); }
+  54.32% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1356174.webp'); }
+  54.94% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1356188.webp'); }
+  55.56% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1334085.webp'); }
+  56.17% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1335462.webp'); }
+  56.79% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1335463.webp'); }
+  57.41% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1335464.webp'); }
+  58.02% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1335753.webp'); }
+  58.64% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1335755.webp'); }
+  59.26% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1339457.webp'); }
+  59.88% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1340478.webp'); }
+  60.49% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1341681.webp'); }
+  61.11% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1341977.webp'); }
+  61.73% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1343093.webp'); }
+  62.35% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1343098.webp'); }
+  62.96% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1343524.webp'); }
+  63.58% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1345025.webp'); }
+  64.20% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1345122.webp'); }
+  64.81% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1346093.webp'); }
+  65.43% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1346603.webp'); }
+  66.05% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1347431.webp'); }
+  66.67% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1347582.webp'); }
+  67.28% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1348407.webp'); }
+  67.90% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1348610.webp'); }
+  68.52% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1348611.webp'); }
+  69.14% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1297318.webp'); }
+  69.75% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1297444.webp'); }
+  70.37% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1298767.webp'); }
+  70.99% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1299271.webp'); }
+  71.60% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1303452.webp'); }
+  72.22% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1309440.webp'); }
+  72.84% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1310762.webp'); }
+  73.46% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1311019.webp'); }
+  74.07% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1314369.webp'); }
+  74.69% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1316583.webp'); }
+  75.31% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1316654.webp'); }
+  75.93% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1322426.webp'); }
+  76.54% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1322553.webp'); }
+  77.16% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1325245.webp'); }
+  77.78% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1327796.webp'); }
+  78.40% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1328727.webp'); }
+  79.01% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1328869.webp'); }
+  79.63% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1332662.webp'); }
+  80.25% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1333015.webp'); }
+  80.86% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1333017.webp'); }
+  81.48% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1333312.webp'); }
+  82.10% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1333319.webp'); }
+  82.72% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1169180.webp'); }
+  83.33% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1169181.webp'); }
+  83.95% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1169320.webp'); }
+  84.57% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1171270.webp'); }
+  85.19% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1172701.webp'); }
+  85.80% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1173817.webp'); }
+  86.42% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1178448.webp'); }
+  87.04% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1179628.webp'); }
+  87.65% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1180475.webp'); }
+  88.27% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1202299.webp'); }
+  88.89% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1202329.webp'); }
+  89.51% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1202332.webp'); }
+  90.12% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1203398.webp'); }
+  90.74% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1204356.webp'); }
+  91.36% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1204362.webp'); }
+  91.98% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1219673.webp'); }
+  92.59% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1220482.webp'); }
+  93.21% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1220484.webp'); }
+  93.83% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1255196.webp'); }
+  94.44% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1260155.webp'); }
+  95.06% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1291240.webp'); }
+  95.68% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1296301.webp'); }
+  96.30% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1161816.webp'); }
+  96.91% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1164526.webp'); }
+  97.53% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1166452.webp'); }
+  98.15% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1167313.webp'); }
+  98.77% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1167320.webp'); }
+  99.38% { background-image: url('https://raw.githubusercontent.com/mikazouki/genshin_rando_theme/main/assets/thumbbig-1169134.webp'); }
+}
